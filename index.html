@@ -1,16 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts. gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script src="script/script.js"></script>
+    <script src="script/script-twee.js"></script>
 </head>
+
 <body>
-    
+    <div class="page">
+        <header>
+            <a class="title" href="index.html">Harm Stokman</a>
+            <ul>
+                <li>
+                    <a class="link" href="#About-Me">About</a>
+                </li>
+                <li>
+                    <a class="link" href="#Work-skills">Work / Skills</a>
+                </li>
+                <li>
+                    <a class="link" href="#Contact">Contact</a>
+                </li>
+                <li>
+                    <div class="drops">
+                        <button onclick="dropDown()"><img class="drop-icon" src="images/image.png"
+                                alt="Dropdown icon"></button>
+                        <div id="deDrop" class="dropdown-links">
+                            <a href="#about">About</a>
+                            <a href="#work-skills">Work / Skills</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <div class="landing">
+                <ul>
+                    <li>
+                        <h1>Welcome to my page!</h1>
+                    </li>
+                    <li>
+                        <h2>Want to know something about me or my work? Feel free to check this page out.</h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="about">
+            <h1>About me</h1>
+            Click on an arrow to show contents.
+            <div class="slideshow">
+                <img class="arrow-img left" src="images/white-arrow-left.png" onclick="slideTellenAbout(-1)">
+                <div class="about-content fade">
+                    <div class="studies-content">
+                        <h2>Studies</h2>
+                        <div class="studies-all">
+                            <div class="timeline">
+                                <div class="time-point">
+                                </div>
+                                <div class="line">
+                                </div>
+                                <div class="time-point">
+                                </div>
+                            </div>
+                            <div class="studies">
+                                <div class="years-names">
+                                    <span>2025-</span>
+                                    Software Developer at ROC Nijmegen
+                                </div>
+                                <div class="years-names">
+                                    <span>2022-2024</span>
+                                    IT Systems and Devices at ROC Nijmegen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content fade">
+                    <img src="images/pasfotocut.jpg" alt="profilepicture">
+                    <div>
+                        <p> My name is Harm Stokman, and i am currently studying Software Development
+                            at ROC Nijmegen, Netherlands.</p>
+                        <p> I started getting interest in Programming after using basic HTML and CSS, which i enjoyed.
+                            In my
+                            first year, i am trying to learn different programming languages, such as Java and
+                            JavaScript,
+                            and improve my programming skills.</p>
+                    </div>
+                </div>
+                <img class="arrow-img right" src="images/white-arrow-right.png" onclick="slideTellenAbout(1)">
+            </div>
+        </section>
+        <section id="work-skills" class="dark-blue">
+            <h1>Work / Skills</h1>
+            Click on an arrow to show contents.
+            <div class="slideshow">
+                <img class="arrow-img left" src="images/white-arrow-left.png" onclick="slideTellen(-1)">
+                <div id="pink-goose" class="project-content fade">
+                    <input type="checkbox" id="zoom-in-pink">
+                    <label for="zoom-in-pink">
+                        <img src="images/Pink-goose-pic.png" id="pink-goose-pic"
+                            alt="Afbeelding van het Pink Goose project">
+                    </label>
+                    <div>
+                        <h2>Pink Goose</h2>
+                        <p>
+                            This was the project Pink Goose, where i remade the website Pink Goose with my own code.
+                            This
+                            project helped me improve my skill with HTML and CSS and used different elements than i used
+                            before.
+                            This also helped me to keep in mind with code and name conventions.
+                        </p>
+                    </div>
+                </div>
+                <div id="mastermind" class="project-content fade">
+                    <input type="checkbox" id="zoom-in-mastermind">
+                    <label for="zoom-in-mastermind">
+                        <img src="images/mastermind-pic.png" id="mastermind-pic"
+                            alt="Afbeelding van het project Mastermind">
+                    </label>
+                    <div>
+                        <h2>Mastermind</h2>
+                        <p>
+                            This was the project Mastermind, Where you need to guess a random generated color code,
+                            where
+                            you
+                            have to guess this code within 10 tries. This was entirely made with java.
+                        </p>
+                    </div>
+                </div>
+                <div id="projectweek-een" class="project-content fade">
+                    <input type="checkbox" id="zoom-in-project-een">
+                    <label for="zoom-in-project-een">
+                        <img src="images/projectweek-een-pic-2.png" class="projectweek-pic"
+                            alt="Afbeelding van Projectweek 1">
+                    </label>
+                    <div>
+                        <h2>Projectweek 1</h2>
+                        <p>
+                            This was the project that we worked on in our first projectweek at ROC Nijmegen. In groups
+                            of 3,
+                            we
+                            had to make a website that contains information about a study in Software Development at ROC
+                            Nijmegen.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-content fade">
+                    <div>
+                        <h2>Languages i use</h2>
+                        <ul class="languages">
+                            <li><img class="languages-img" src="images/css-logo-final.png" alt="css logo"></li>
+                            <li><img class="languages-img" src="images/html-logo-final.png" alt="html logo"></li>
+                            <li><img class="javascript-img" src="images/javascript-block-final.png" alt="javascript logo">
+                            <li><img class="java-img" src="images/java-cut.png" alt="java logo"></li>   
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="arrow-img right" src="images/white-arrow-right.png" onclick="slideTellen(1)">
+            </div>
+        </section>
+        <section id="contact" class="dark-blue">
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contact-links">
+                    <div class="link-box">
+                        <img src="images/Mail-icon.png" alt="Mail icon">
+                        <span>E-mail</span>
+                        <span id="mail">1203611@student.roc-nijmegen.nl</span><button onclick="copying()"><img
+                                src="images/copy-icon-final.png" alt="copy icon"></button>
+                    </div>
+                    <div class="link-box">
+                        <img src="images/github-icon.png" alt="Github icon">
+                        <span>Github</span>
+                        <a href="https://github.com/Harm-Stokman">Harm-Stokman</a>
+                    </div>
+                    <div class="link-box">
+                        <img src="images/linked.png" alt="Linkedin icon">
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/harm-stokman-8077bb297/">Harm Stokman</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

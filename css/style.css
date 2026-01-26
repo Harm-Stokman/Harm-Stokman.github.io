@@ -1,0 +1,408 @@
+body {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    overflow: hidden;
+    /* background: #6a7f93; */
+    background: #373796;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+header {
+    background: transparent;
+    top: 0;
+    position: sticky;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 30px;
+    width: 25vw;
+}
+
+.header-scrolls {
+    background-color: black;
+}
+
+header ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 18px;
+}
+
+header button {
+    height: 50px;
+    width: 50px;
+    display: none;
+    background: none;
+    border: none;
+    align-self: center;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+.drop-icon {
+    height: 50px;
+    width: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.drops {
+    display: inline-block;
+    position: relative;
+}
+
+.drop-button {
+    color: black;
+}
+
+.dropdown-links {
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropdown-links a {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 50px;
+}
+
+.dark-blue {
+    background: #29296F;
+}
+
+.landing ul {
+    list-style: none;
+}
+
+.page {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.about-content {
+    display: none;
+    width: 60vw;
+    height: 60vh;
+    gap: 90px;
+    font-size: 28px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.about-content img {
+    width: 302px;
+    height: 365px;
+    border-radius: 200px;
+    border: 2px solid white;
+}
+
+.timeline {
+    position: relative;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-point {
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.line {
+    height: 150px;
+    width: 5px;
+    background: white;
+    z-index: -1;
+}
+
+.studies-all {
+    display: flex;
+    gap: 3vw;
+}
+
+.studies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.studies {
+    display: flex;
+    flex-direction: column;
+    gap: 155px;
+}
+
+.years-names {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    text-align: left;
+}
+
+.slides {
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    gap: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.arrow-img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrow-img:hover {
+    transform: scale(1.2);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.project-content {
+    display: none;
+    width: 60vw;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.project-content div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.project-content img {
+    max-width: 400px;
+    max-height: 700px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.languages {
+    display: flex;
+    list-style: none;
+    gap: 5vw;
+}
+
+.languages li {
+    align-content: center;
+}
+
+.languages-img {
+    height: 200px;
+    width: 130px;
+}
+
+.java-img {
+    width: 100px;
+    height: 200px;
+}
+
+.javascript-img {
+    height: 130px;
+    width: 130px;
+    align-self: center;
+    padding: 0;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~label>img {
+    position: relative;
+    transform: scale(1.5);
+    cursor: zoom-out;
+    transition: 0.5s;
+}
+
+.projectweek-pic {
+    border: 4px solid white;
+    border-radius: 50px;
+}
+
+
+.slide-button {
+    background: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.slide-button:hover,
+.huidge {
+    cursor: pointer;
+    transition: 0.5s;
+    background: #686868;
+}
+
+.slides-light {
+    background: white;
+    ;
+}
+
+.contact {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    gap: 5vw;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.link-box {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-box img {
+    height: 70px;
+    width: 70px;
+}
+
+.link-box span {
+    text-align: center;
+}
+
+.link-box button {
+    background: transparent;
+    border: none;
+}
+
+.link-box button img {
+    height: 30px;
+    width: 30px;
+}
+
+.link-box button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    header {
+        width: 100vw;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    header ul {
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .title {
+        width: 220px;
+    }
+
+
+   .link {
+    display: none;
+   }
+
+    header button {
+        display: block;
+    }
+
+    section {
+        width: 100vw;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .landing  ul{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
