@@ -9,35 +9,35 @@ function dropDown() {
 }
 
 
-let slideIndexAbout = 1;
-toonSlideAbout(slideIndexAbout);
+// let slideIndexAbout = 1;
+// toonSlideAbout(slideIndexAbout);
 
-function slideTellenAbout(n) {
-    toonSlideAbout(slideIndexAbout += n);
-}
+// function slideTellenAbout(n) {
+//     toonSlideAbout(slideIndexAbout += n);
+// }
 
-function huidigeSlideAbout(n) {
-    toonSlideAbout(slideIndexAbout = n);
-}
+// function huidigeSlideAbout(n) {
+//     toonSlideAbout(slideIndexAbout = n);
+// }
 
-function toonSlideAbout(n) {
-    let index;
-    let slide = document.getElementsByClassName("about-content");
+// function toonSlideAbout(n) {
+//     let index;
+//     let slide = document.getElementsByClassName("about-content");
 
-    if (n > slide.length) {
-        slideIndexAbout = 1
-    }
+//     if (n > slide.length) {
+//         slideIndexAbout = 1
+//     }
 
-    if (n < 1)  {
-        slideIndexAbout = slide.length
-    }
+//     if (n < 1)  {
+//         slideIndexAbout = slide.length
+//     }
 
-    for (index = 0; index < slide.length; index++) {
-        slide[index].style.display = "none"
-    }
+//     for (index = 0; index < slide.length; index++) {
+//         slide[index].style.display = "none"
+//     }
         
-    slide[slideIndexAbout-1].style.display = "flex";
-}
+//     slide[slideIndexAbout-1].style.display = "flex";
+// }
 
 
 let slideIndex = 1;
