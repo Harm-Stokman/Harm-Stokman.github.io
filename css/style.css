@@ -29,10 +29,6 @@ header {
     width: 25vw;
 }
 
-.header-scrolls {
-    background-color: black;
-}
-
 header ul {
     margin: 0;
     list-style: none;
@@ -88,6 +84,10 @@ header a {
 
 .dark-blue {
     background: #29296F;
+}
+
+.black {
+    background: black;
 }
 
 .landing ul {
@@ -175,7 +175,7 @@ section {
 .studies {
     display: flex;
     flex-direction: column;
-    gap: 155px;
+    gap: 7vw;
 }
 
 .years-names {
@@ -294,26 +294,6 @@ input[type=checkbox]:checked~label>img {
 }
 
 
-.slide-button {
-    background: black;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-}
-
-.slide-button:hover,
-.huidge {
-    cursor: pointer;
-    transition: 0.5s;
-    background: #686868;
-}
-
-.slides-light {
-    background: white;
-    ;
-}
 
 .contact {
     display: flex;
@@ -386,9 +366,9 @@ input[type=checkbox]:checked~label>img {
     }
 
 
-   .link {
-    display: none;
-   }
+    .link {
+        display: none;
+    }
 
     header button {
         display: block;
@@ -401,7 +381,7 @@ input[type=checkbox]:checked~label>img {
         gap: 20px;
     }
 
-    .landing  ul{
+    .landing ul {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -411,7 +391,7 @@ input[type=checkbox]:checked~label>img {
         height: 265px;
         border-radius: 15px;
     }
-    
+
     .about-content {
         flex-direction: column;
         align-items: center;
@@ -421,7 +401,7 @@ input[type=checkbox]:checked~label>img {
     }
 
     .slideshow {
-         gap: 0;
+        gap: 0;
     }
 
     .studies-all {
@@ -439,7 +419,7 @@ input[type=checkbox]:checked~label>img {
     .arrow-img {
         height: 50px;
         width: 50px;
-        cursor: none;
+        cursor: default;
         transition: none;
     }
 
@@ -449,5 +429,40 @@ input[type=checkbox]:checked~label>img {
 
     .link-box span {
         display: none;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+
+    .project-content img {
+        max-width: 200px;
+        max-height: 600px;
+    }
+
+    input[type=checkbox]:checked~label>img {
+        transform: scale(1.3);
+    }
+
+    .languages {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .languages-img {
+        height: 100px;
+        width: 60px;
+    }
+
+    .java-img {
+        width: 50px;
+        height: 100px;
+    }
+
+    .javascript-img {
+        height: 70px;
+        width: 70px;
     }
 }
