@@ -387,8 +387,8 @@ input[type=checkbox]:checked~label>img {
     }
 
     .about-content img {
-        width: 202px;
-        height: 265px;
+        width: 180px;
+        height: 245px;
         border-radius: 15px;
     }
 
