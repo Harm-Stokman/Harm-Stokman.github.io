@@ -87,6 +87,7 @@ nav a {
 .landing {
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .page {
@@ -364,6 +365,10 @@ input[type=checkbox]:checked~label>img {
         height: 100vh;
         margin: 0;
         gap: 50px;
+    }
+
+    .landing {
+        font-size: 12px;
     }
 
     .landing ul {
