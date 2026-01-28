@@ -10,7 +10,7 @@ body {
 
 
 
-header {
+header,nav {
     background: transparent;
     top: 0;
     position: sticky;
@@ -29,7 +29,7 @@ header {
     width: 25vw;
 }
 
-header ul {
+nav ul {
     margin: 0;
     list-style: none;
     display: flex;
@@ -38,25 +38,13 @@ header ul {
     font-size: 18px;
 }
 
-header button {
-    height: 50px;
-    width: 50px;
-    display: none;
-    background: none;
-    border: none;
-    align-self: center;
-}
-
-header button:hover {
-    cursor: pointer;
-}
-
 .drop-icon {
     height: 50px;
     width: 50px;
+    display: none;
 }
 
-header a {
+nav a {
     text-decoration: none;
     color: white;
 }
@@ -71,15 +59,21 @@ header a {
 }
 
 .dropdown-links {
+    margin-top: 15px;
+    background-color: rgba(43, 42, 42, 0.7);
+    height: 150px;
     display: none;
     z-index: 3;
     position: absolute;
+    right: 0;
+    border-radius: 10px;
+    padding: 1px;
 }
 
 .dropdown-links a {
     color: rgb(255, 255, 255);
     display: block;
-    margin-top: 50px;
+    opacity: 1;
 }
 
 .dark-blue {
@@ -90,8 +84,9 @@ header a {
     background: black;
 }
 
-.landing ul {
-    list-style: none;
+.landing {
+    display: flex;
+    flex-direction: column;
 }
 
 .page {
@@ -103,6 +98,7 @@ header a {
 .show {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .hide {
@@ -118,7 +114,7 @@ section {
     color: white;
     width: 100%;
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .about-content {
@@ -172,6 +168,10 @@ section {
     gap: 20px;
 }
 
+.studies-content h2 {
+    font-size: 25px;
+}
+
 .studies {
     display: flex;
     flex-direction: column;
@@ -183,17 +183,6 @@ section {
     flex-direction: column;
     font-size: 23px;
     text-align: left;
-}
-
-.slides {
-    height: 30px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px;
-    gap: 8px;
-    background: rgb(255, 255, 255);
 }
 
 .slideshow {
@@ -237,7 +226,7 @@ section {
     gap: 1vw;
 }
 
-.project-content div {
+.languages {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -250,14 +239,9 @@ section {
     transition: 0.1s;
 }
 
-.languages {
+.languages div {
     display: flex;
-    list-style: none;
     gap: 5vw;
-}
-
-.languages li {
-    align-content: center;
 }
 
 .languages-img {
@@ -288,14 +272,15 @@ input[type=checkbox]:checked~label>img {
     transition: 0.5s;
 }
 
+
+
+
 .projectweek-pic {
     border: 4px solid white;
     border-radius: 50px;
 }
 
-
-
-.contact {
+.contact-content {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -307,10 +292,10 @@ input[type=checkbox]:checked~label>img {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
 }
 
-.link-box {
+.contact-links div {
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -318,40 +303,40 @@ input[type=checkbox]:checked~label>img {
     gap: 10px;
 }
 
-.link-box a {
+.contact-links a {
     text-decoration: none;
     color: white;
 }
 
-.link-box img {
+.contact-links img {
     height: 70px;
     width: 70px;
 }
 
-.link-box span {
+.contact-links span {
     text-align: center;
 }
 
-.link-box button {
+.contact-links button {
     background: transparent;
     border: none;
 }
 
-.link-box button img {
-    height: 30px;
-    width: 30px;
+.contact-links button:hover {
+    cursor: pointer;
 }
 
-.link-box button:hover {
-    cursor: pointer;
+.contact-links button img {
+    height: 30px;
+    width: 30px;
 }
 
 @media screen and (max-width: 500px) {
 
 
-    header {
+    header,
+    nav {
         width: 100vw;
-        justify-content: space-around;
         gap: 0;
     }
 
@@ -370,15 +355,15 @@ input[type=checkbox]:checked~label>img {
         display: none;
     }
 
-    header button {
+    .drop-icon {
         display: block;
     }
 
     section {
         width: 100vw;
-        justify-content: center;
+        height: 100vh;
         margin: 0;
-        gap: 20px;
+        gap: 50px;
     }
 
     .landing ul {
@@ -387,8 +372,7 @@ input[type=checkbox]:checked~label>img {
     }
 
     .about-content img {
-        width: 180px;
-        height: 245px;
+        width: 170px;
         border-radius: 15px;
     }
 
@@ -409,7 +393,12 @@ input[type=checkbox]:checked~label>img {
     }
 
     .studies {
+        font-size: 16px;
         gap: 30vw;
+    }
+
+    .studies span {
+        font-size: 16px;
     }
 
     .years-names {
@@ -427,8 +416,9 @@ input[type=checkbox]:checked~label>img {
         transform: none;
     }
 
-    .link-box span {
-        display: none;
+    .contact-links {
+        flex-direction: column;
+        gap: 10vw;
     }
 
     .project-content {
@@ -437,15 +427,15 @@ input[type=checkbox]:checked~label>img {
 
 
     .project-content img {
-        max-width: 200px;
-        max-height: 600px;
+        max-width: 180px;
     }
 
     input[type=checkbox]:checked~label>img {
         transform: scale(1.3);
     }
 
-    .languages {
+    .languages div {
+        justify-items: center;
         padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;

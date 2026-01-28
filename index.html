@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts. gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -17,47 +17,43 @@
 <body>
     <div class="page">
         <header>
-            <a class="title" href="index.html">Harm Stokman</a>
-            <ul>
-                <li>
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="link" href="#work-skills">Work / Skills</a>
-                </li>
-                <li>
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-                <li>
-                    <div class="drops">
-                        <button onclick="dropDown()"><img class="drop-icon" src="images/image.png"
-                                alt="Dropdown icon"></button>
-                        <div id="deDrop" class="dropdown-links">
-                            <a href="#about">About</a>
-                            <a href="#work-skills">Work / Skills</a>
-                            <a href="#contact">Contact</a>
+            <nav>
+                <a class="title" href="index.html">Harm Stokman</a>
+                <ul>
+                    <li>
+                        <a class="link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#work-skills">Work / Skills</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <div class="drops">
+                            <img class="drop-icon" src="images/image.png" alt="Dropdown icon" onclick="dropDown()">
+                            <div id="deDrop" class="dropdown-links">
+                                <a href="#about">About</a>
+                                <a href="#work-skills">Work / Skills</a>
+                                <a href="#contact">Contact</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <section>
             <div class="landing">
-                <ul>
-                    <li>
-                        <h1>Welcome to my page!</h1>
-                    </li>
-                    <li>
-                        <h2>Want to know something about me or my work? Feel free to check this page out.</h2>
-                    </li>
-                </ul>
+                <h1>Welcome to my page!</h1>
+                <h2>Want to know something about me or my work? Feel free to check this page out.</h2>
             </div>
         </section>
         <section id="about">
             <h1>About me</h1>
             Click on an arrow to show contents.
             <div class="slideshow">
-                <img class="arrow-img left" src="images/white-arrow-left.png" onclick="slideTellenAbout(-1)">
+                <img class="arrow-img left" src="images/white-arrow-left.png" alt="Arrow icon to the left"
+                    onclick="slideTellenAbout(-1)">
                 <div class="about-content fade">
                     <div class="studies-content">
                         <h2>Studies</h2>
@@ -97,14 +93,16 @@
                             and improve my programming skills.</p>
                     </div>
                 </div>
-                <img class="arrow-img right" src="images/white-arrow-right.png" onclick="slideTellenAbout(1)">
+                <img class="arrow-img right" src="images/white-arrow-right.png" alt="Arrow icon to the right"
+                    onclick="slideTellenAbout(1)">
             </div>
         </section>
         <section id="work-skills" class="dark-blue">
             <h1>Work / Skills</h1>
             Click on an arrow to show contents.
             <div class="slideshow">
-                <img class="arrow-img left" src="images/white-arrow-left.png" onclick="slideTellen(-1)">
+                <img class="arrow-img left" src="images/white-arrow-left.png" alt="Arrow icon to the left"
+                    onclick="slideTellen(-1)">
                 <div id="pink-goose" class="project-content fade">
                     <input type="checkbox" id="zoom-in-pink">
                     <label for="zoom-in-pink">
@@ -150,43 +148,42 @@
                             This was the project that we worked on in our first projectweek at ROC Nijmegen. In groups
                             of 3,
                             we
-                            had to make a website that contains information about a study in Software Development at ROC
+                            had to make a webpage that contains information about a study in Software Development at ROC
                             Nijmegen.
                         </p>
                     </div>
                 </div>
                 <div class="project-content fade">
-                    <div>
+                    <div class="languages">
                         <h2>Languages i use</h2>
-                        <ul class="languages">
-                            <li><img class="languages-img" src="images/css-logo-final.png" alt="css logo"></li>
-                            <li><img class="languages-img" src="images/html-logo-final.png" alt="html logo"></li>
-                            <li><img class="javascript-img" src="images/javascript-block-final.png"
-                                    alt="javascript logo">
-                            <li><img class="java-img" src="images/java-cut.png" alt="java logo"></li>
-                            </li>
-                        </ul>
+                        <div>
+                            <img class="languages-img" src="images/css-logo-final.png" alt="css logo">
+                            <img class="languages-img" src="images/html-logo-final.png" alt="html logo">
+                            <img class="javascript-img" src="images/javascript-block-final.png" alt="javascript logo">
+                            <img class="java-img" src="images/java-cut.png" alt="java logo">
+                        </div>
                     </div>
                 </div>
-                <img class="arrow-img right" src="images/white-arrow-right.png" onclick="slideTellen(1)">
+                <img class="arrow-img right" src="images/white-arrow-right.png" alt="Arrow icon to the right"
+                    onclick="slideTellen(1)">
             </div>
         </section>
         <section id="contact" class="dark-blue">
-            <div class="contact">
+            <div class="contact-content">
                 <h1>Contact</h1>
                 <div class="contact-links">
-                    <div class="link-box">
+                    <div>
                         <img src="images/Mail-icon.png" alt="Mail icon">
                         E-mail
                         <span id="mail">stokmanharm@gmail.com</span><button onclick="copying()"><img
                                 src="images/copy-icon-final.png" alt="copy icon"></button>
                     </div>
-                    <div class="link-box">
+                    <div>
                         <img src="images/github-icon.png" alt="Github icon">
                         Github
                         <a href="https://github.com/Harm-Stokman">Harm-Stokman</a>
                     </div>
-                    <div class="link-box">
+                    <div>
                         <img src="images/linked.png" alt="Linkedin icon">
                         LinkedIn
                         <a href="https://www.linkedin.com/in/harm-stokman-8077bb297/">Harm Stokman</a>
