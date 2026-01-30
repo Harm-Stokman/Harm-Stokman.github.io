@@ -128,6 +128,10 @@ section {
     justify-content: center;
 }
 
+.flex {
+    display: flex;
+}
+
 .about-content img {
     width: 302px;
     height: 365px;
@@ -225,6 +229,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    font-size: 19px;
 }
 
 .languages {
@@ -272,9 +277,6 @@ input[type=checkbox]:checked~label>img {
     cursor: zoom-out;
     transition: 0.5s;
 }
-
-
-
 
 .projectweek-pic {
     border: 4px solid white;
