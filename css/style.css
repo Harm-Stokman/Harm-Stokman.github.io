@@ -371,7 +371,7 @@ input[type=checkbox]:checked~label>img {
     }
 
     .about-content img {
-        width: 170px;
+        width: 200px;
         border-radius: 15px;
     }
 
@@ -424,7 +424,7 @@ input[type=checkbox]:checked~label>img {
         flex-direction: column;
         font-size: 14px;
     }
-    
+
     .project-content img {
         max-width: 180px;
     }
@@ -453,5 +453,11 @@ input[type=checkbox]:checked~label>img {
     .javascript-img {
         height: 70px;
         width: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-content img {
+        width: 170px;
     }
 }
