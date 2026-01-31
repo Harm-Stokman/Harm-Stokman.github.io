@@ -13,7 +13,6 @@
         rel="stylesheet">
     <script src="script/script.js"></script>
 </head>
-
 <body>
     <div class="page">
         <header>
@@ -50,11 +49,23 @@
         </section>
         <section id="about">
             <h1>About me</h1>
-            Click on an arrow to show contents.
+            Click on an arrow to show more content.
             <div class="slideshow">
                 <img class="arrow-img left" src="images/white-arrow-left.png" alt="Arrow icon to the left"
                     onclick="slideTellenAbout(-1)">
-                <div class="about-content fade">
+                    <div class="about-content flex fade">
+                    <img src="images/pasfotocut.jpg" alt="profilepicture">
+                    <div>
+                        <p> My name is Harm Stokman, and i am currently studying Software Development
+                            at ROC Nijmegen, Netherlands.</p>
+                        <p> I started getting interest in Programming after using basic HTML and CSS, which i enjoyed.
+                            In my
+                            first year, i am trying to learn different programming languages, such as Java and
+                            JavaScript,
+                            and improve my programming skills.</p>
+                    </div>
+                </div>
+                <div class="about-content hide fade">
                     <div class="studies-content">
                         <h2>Studies</h2>
                         <div class="studies-all">
@@ -81,29 +92,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-content fade">
-                    <img src="images/pasfotocut.jpg" alt="profilepicture">
-                    <div>
-                        <p> My name is Harm Stokman, and i am currently studying Software Development
-                            at ROC Nijmegen, Netherlands.</p>
-                        <p> I started getting interest in Programming after using basic HTML and CSS, which i enjoyed.
-                            In my
-                            first year, i am trying to learn different programming languages, such as Java and
-                            JavaScript,
-                            and improve my programming skills.</p>
-                    </div>
-                </div>
                 <img class="arrow-img right" src="images/white-arrow-right.png" alt="Arrow icon to the right"
                     onclick="slideTellenAbout(1)">
             </div>
         </section>
         <section id="work-skills" class="dark-blue">
             <h1>Work / Skills</h1>
-            Click on an arrow to show contents.
+            Click on an arrow to show more content.
             <div class="slideshow">
                 <img class="arrow-img left" src="images/white-arrow-left.png" alt="Arrow icon to the left"
                     onclick="slideTellen(-1)">
-                <div id="pink-goose" class="project-content fade">
+                <div id="pink-goose" class="project-content flex fade">
                     <input type="checkbox" id="zoom-in-pink">
                     <label for="zoom-in-pink">
                         <img src="images/Pink-goose-pic.png" id="pink-goose-pic"
@@ -120,7 +119,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="mastermind" class="project-content fade">
+                <div id="mastermind" class="project-content hide fade">
                     <input type="checkbox" id="zoom-in-mastermind">
                     <label for="zoom-in-mastermind">
                         <img src="images/mastermind-pic.png" id="mastermind-pic"
@@ -136,7 +135,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="projectweek-een" class="project-content fade">
+                <div id="projectweek-een" class="project-content hide fade">
                     <input type="checkbox" id="zoom-in-project-een">
                     <label for="zoom-in-project-een">
                         <img src="images/projectweek-een-pic-2.png" class="projectweek-pic"
@@ -153,7 +152,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project-content fade">
+                <div class="project-content hide fade">
                     <div class="languages">
                         <h2>Languages i use</h2>
                         <div>
