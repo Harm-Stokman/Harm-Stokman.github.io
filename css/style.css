@@ -422,12 +422,9 @@ input[type=checkbox]:checked~label>img {
 
     .project-content {
         flex-direction: column;
+        font-size: 14px;
     }
-
-    #pink-goose-pic {
-        max-width: 150px;
-    }
-
+    
     .project-content img {
         max-width: 180px;
     }
