@@ -369,7 +369,7 @@ input[type=checkbox]:checked~label>img {
     .landing {
         font-size: 13px;
     }
-    
+
     .about-content img {
         width: 170px;
         border-radius: 15px;
@@ -424,6 +424,9 @@ input[type=checkbox]:checked~label>img {
         flex-direction: column;
     }
 
+    #pink-goose-pic {
+        max-width: 150px;
+    }
 
     .project-content img {
         max-width: 180px;
