@@ -363,7 +363,7 @@ input[type=checkbox]:checked~label>img {
         width: 100vw;
         height: 100vh;
         margin: 0;
-        gap: 50px;
+        gap: 30px;
     }
 
     .landing {
