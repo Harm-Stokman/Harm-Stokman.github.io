@@ -105,6 +105,7 @@ nav a {
     display: none;
 }
 
+/* de css voor ale sections op mijn pagina */
 section {
     display: flex;
     flex-direction: column;
@@ -117,6 +118,7 @@ section {
     scroll-snap-align: center;
 }
 
+/* de css voor de divs in "About" */
 .about-content {
     width: 60vw;
     height: 60vh;
@@ -137,6 +139,7 @@ section {
     border: 2px solid white;
 }
 
+/* css voor de tijdlijn van mijn opleidingen */
 .timeline {
     position: relative;
     width: 60px;
@@ -220,6 +223,7 @@ section {
     }
 }
 
+/* de css voor de divs in "Work / Skills" */
 .project-content {
     width: 60vw;
     height: 60vh;
@@ -268,6 +272,7 @@ input[type=checkbox] {
     display: none;
 }
 
+/* dit zorgt ervoor dat afbeeldingen van projecten vergroot kunnen worden */
 input[type=checkbox]:checked~label>img {
     position: relative;
     transform: scale(1.5);
@@ -331,6 +336,7 @@ input[type=checkbox]:checked~label>img {
     width: 30px;
 }
 
+/* de css voor responisveness */
 @media screen and (max-width: 500px) {
 
 
@@ -363,7 +369,7 @@ input[type=checkbox]:checked~label>img {
         width: 100vw;
         height: 100vh;
         margin: 0;
-        gap: 40px;s
+        gap: 40px;
     }
 
     .landing {
